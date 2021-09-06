@@ -1,11 +1,7 @@
-from cropping import cropping
+from cropping import cropping, check_size
 from PIL import Image
 
-im = Image.open("image.png")
-width = im.width
-height = im.height
-
-if width == height:
+if check_size(Image.open("image.png")):
     # call cropping function
     cropping("image.png")
 else:
