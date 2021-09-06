@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "cropnine"
+version = "0.1.0"
+description = ""
+authors = ["nibezo <nibezo.cs@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+Pillow = "^8.3.2"
+vkwave = {url = "https://github.com/fscdev/vkwave/archive/master.zip"}
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
