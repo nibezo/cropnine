@@ -1,6 +1,17 @@
 from PIL import Image
 
 
+def check_size(image):
+    """Check size of the image. If not square, return False"""
+    im = image.open("image.png")
+    width = im.width
+    height = im.height
+    if width == height:
+        return True
+    else:
+        return False
+
+
 def cropping(image):
     """Cropping image into 9 parts"""
 
