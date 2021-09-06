@@ -20,5 +20,5 @@ def cropping(image):
     for i in range(1, 4):
         for j in range(1, 4):
             cropped = image.crop(((x/3)*(j-1), (x/3)*(i-1), (x/3)*j, (x/3)*i))
-            cropped.save("cropped/im"+str(k)+".png")
+            cropped.save("cropped/im"+str(k)+".jpg")
             k += 1
