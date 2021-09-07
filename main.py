@@ -7,6 +7,8 @@ from vkwave.api import API
 from vkwave.bots.utils.uploaders import PhotoUploader
 from vkwave.client import AIOHTTPClient
 from vkwave.types.objects import MessagesMessageAttachmentType
+import os
+os.mkdir("../cropnine/cropped")
 
 bot = SimpleLongPollBot(tokens=vktoken.token, group_id=206983513)
 logging.basicConfig(level="DEBUG")
